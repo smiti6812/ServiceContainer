@@ -1,6 +1,5 @@
 # ServiceContainer
 
-# 01_02-service-containers
 Use these files to test a service container.
 
 1. Create a new repo.
