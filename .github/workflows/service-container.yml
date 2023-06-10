@@ -33,7 +33,9 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v2
       - name: Install python dev
-        run: sudo apt install python3-dev libpq-dev
+        run: |
+          #sudo apt install python3-dev libpq-dev
+          export PATH=/usr/bin/postgresql/14/bin:$PATH
         shell: bash       
       - name: Set up Python
         uses: actions/setup-python@v2
