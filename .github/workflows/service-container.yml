@@ -32,7 +32,9 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@v2
-
+      - name: Install python dev
+        run: sudo apt install python3-dev libpq-dev
+        shell: bash       
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
